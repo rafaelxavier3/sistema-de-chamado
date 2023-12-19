@@ -1,0 +1,38 @@
+:root {
+  --white: #FFFFFF;
+  --black: #0C0D0F;
+  --gray500: #A4ACB4;
+  --gray600: #64666B;
+  --gray700: #424449;
+  --gray800: #1D1E21;
+  --gray900: #141518;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--gray400);
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
