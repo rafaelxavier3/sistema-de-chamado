@@ -146,9 +146,9 @@ export function Dashboard() {
                         </td>
                         <td data-label="Cadastrado">{item.createdFormat}</td>
                         <td data-label="#">
-                          <button onClick={() => toggleModal(item)} className='action' style={{ backgroundColor: '#0817EA' }}>
+                          <Link onClick={() => toggleModal(item)} className='action' style={{ backgroundColor: '#0817EA' }}>
                             <CiSearch color='#FFF' size={17} />
-                          </button>
+                          </Link>
                           <Link to={`/new/${item.id}`} className='action' style={{ backgroundColor: 'orange' }}>
                             <CiEdit color='#FFF' size={17} />
                           </Link>
