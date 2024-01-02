@@ -43,7 +43,7 @@ export function AuthProvider({ children }) {
           uid: uid,
           nome: docSnap.data().nome,
           email: value.user.email,
-          avatarURL: docSnap.data().avatarURL
+          avatarUrl: docSnap.data().avatarUrl
         }
         setUser(data);
         storageUser(data);
@@ -68,13 +68,13 @@ export function AuthProvider({ children }) {
 
         await setDoc(doc(db, "users", uid), {
           nome: name,
-          avatarURL: null,
+          avatarUrl: null,
         }).then(() => {
           let data = {
             uid: uid,
             nome: name,
             email: value.user.email,
-            avatarURL: null
+            avatarUrl: null
           };
           setUser(data);
           storageUser(data);
@@ -109,7 +109,9 @@ export function AuthProvider({ children }) {
         createRegister,
         logout,
         loadingAuth,
-        loading
+        loading,
+        storageUser,
+        setUser
       }}
     >
       {children}

@@ -1,0 +1,134 @@
+.new {
+  float: right;
+  margin-bottom: 1.5em;
+  background-color: green;
+  padding: 0.5em;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  color: white;
+  transition: all 0.3s;
+
+  svg {
+    margin-right: 5px;
+  }
+}
+
+.new:hover {
+  background-color: greenyellow;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  span {
+    margin: 2em 0;
+    font-size: 1.2em;
+  }
+}
+
+table {
+  border: 1px solid #CCC;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+
+  tr {
+    background-color: var(--gray800);
+    border: 1px solid gray;
+    padding: 0.35em;
+  }
+
+  th,
+  td {
+    padding: 0.5em;
+    text-align: center;
+  }
+
+  th {
+    font-size: 0.84em;
+    text-transform: uppercase;
+  }
+
+  .action {
+    border: 0;
+    padding: 3px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 3px;
+
+    svg {
+      vertical-align: middle;
+    }
+  }
+
+  .badge {
+    padding: 3px;
+    border-radius: 3px;
+    color: #FFF;
+  }
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+
+.btn-more {
+  border: 0;
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+  background-color: var(--gray900);
+  border-radius: 5px;
+  font-size: 0.9em;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  table {
+    border: 0;
+
+    tr {
+      border-bottom: 3px solid gray;
+      display: block;
+      margin-bottom: 0.6em;
+    }
+
+    td {
+      border-bottom: 1px solid gray;
+      display: block;
+      font-size: 0.8em;
+      text-align: right;
+    }
+
+    td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+
+}

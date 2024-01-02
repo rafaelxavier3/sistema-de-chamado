@@ -1,11 +1,9 @@
 :root {
-  --white: #FFFFFF;
-  --black: #0C0D0F;
-  --gray500: #A4ACB4;
-  --gray600: #64666B;
-  --gray700: #424449;
-  --gray800: #1D1E21;
-  --gray900: #141518;
+  --color1: #314035;
+  --gray700: #D9D9D9;
+  --gray800: #A5A4A6;
+  --gray900: #3B3C40;
+  --black: #0D0D0D;
 }
 
 * {
@@ -21,7 +19,7 @@ body,
 }
 
 body {
-  background-color: var(--gray400);
+  background-color: var(--gray700);
   font-family: 'Poppins', sans-serif;
 }
 

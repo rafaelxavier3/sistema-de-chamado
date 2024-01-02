@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  background-color: var(--gray700);
+  border-radius: 5px;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+
+  .form-profile {
+
+    .label-avatar {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      cursor: pointer;
+
+      img {
+        margin-bottom: 1rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    input {
+      max-width: 400px;
+    }
+
+    input:disabled {
+      cursor: not-allowed;
+    }
+
+    button {
+      max-width: 400px;
+      background-color: var(--color1);
+      color: #fff;
+    }
+
+  }
+}
+
+.logout-btn {
+  padding: 8px 20px;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

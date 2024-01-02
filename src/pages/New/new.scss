@@ -1,0 +1,32 @@
+form {
+
+  select {
+    height: 35px;
+    border-radius: 4px;
+    border: 0;
+    padding: 10px;
+  }
+
+  textarea {
+    resize: none;
+    height: 100px;
+  }
+
+  input[type="radio"] {
+    margin: 15px 0;
+  }
+
+  input[type="radio"]:not(:first-child) {
+    margin-left: 15px;
+  }
+
+  .status {
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+  }
+
+  span {
+    padding-left: 0.5em;
+  }
+}
